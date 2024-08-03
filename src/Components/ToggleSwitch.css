@@ -1,0 +1,91 @@
+/* Basic styles for the toggle switch */
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 26px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: #333;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #FBC637;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .toggle-label {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 550px) {
+    .toggle-switch{
+        gap: 5px;
+    }
+    .switch {
+        width: 30px;
+        height: 17px;
+    }
+    
+    .slider {
+        border-radius: 17px;
+    }
+    
+    .slider:before {
+        height: 15px; /* Increased height to fit better */
+        width: 15px; /* Increased width to fit better */
+        left: 1px; /* Adjusted positioning */
+        bottom: 1px; /* Adjusted positioning */
+    }
+    
+    input:checked + .slider:before {
+        transform: translateX(13px); /* Adjusted the translateX value */
+    }
+    
+    .toggle-label {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        margin-left: 8px; /* Adjust spacing if needed */
+    }
+}
+
+@media (max-width: 550px){
+    
+}

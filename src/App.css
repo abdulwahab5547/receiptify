@@ -1,0 +1,598 @@
+.app{
+  background-color: #61B3D1;
+}
+
+.bg-color{
+  background-color: #61B3D1;
+  min-height: 96vh;
+}
+
+.max-content-width{
+  width: 98%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.max-nav-width{
+  width: 96%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.title{
+  background-color: #F4F5FF;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.app-title{
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  margin: 0;
+  color: #2F1C6B;
+}
+
+.app-title:hover{
+  cursor: pointer;
+}
+
+.inner-bg .h4{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.customization-sliders .h5, .customization-toggles .h5, .templates .h5{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.inner-bg{
+  background-color: #032641;
+  color: #F4F5FF;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 5px;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.receipt-inputs input, .receipt-inputs div input{
+  background-color: white;
+  border: 2px solid #61B3D1;
+  border-radius: 5px;
+}
+
+.items-row{
+  gap: 10px;
+}
+
+.add-item-btn{
+  background-color: #FBC638;
+  border: none;
+  border-radius: 5px;
+  color: #333333;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.login-register-btn{
+  background-color: transparent;
+  border: 2px solid #0C6DFD;
+  border-radius: 5px;
+  color: #F4F5FF;
+  font-weight: bold;
+}
+
+.login-register-btn:hover{
+  background-color: #D5E0FE;
+}
+
+.currency-part{
+  background-color: transparent;
+  border: 2px solid #673DE5;
+  border-radius: 5px;
+  color: #2F1C6B;
+  font-weight: bold;
+}
+
+.currency-part:hover{
+  background-color: #D5E0FE;
+  cursor: pointer;
+}
+
+.the-receipt{
+  background-color: white;
+  border-radius: 2px;
+}
+
+.r-company{
+  font-weight: bold;
+  font-size: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.r-slogan{
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.r-slogan, .r-company{
+  text-transform: uppercase;
+}
+
+.receipt-items-attributes div p{
+  font-size: 15px;
+  margin: 0;
+}
+
+.items-row div p, .r-subtotal{
+  font-size: 14px;
+  margin: 0;
+}
+
+.receipt-items-attributes{
+  margin: 0;
+}
+
+.items-row{
+  margin: 0;
+}
+
+.r-para{
+  font-size: 14px;
+}
+
+.r-big-para{
+  font-size: 15px;
+}
+
+.r-thank-para{
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.dotted-line {
+  width: 100%; /* Adjust width as needed */
+  border-top: 2px dashed black; /* Change border style and color */
+  margin-top: 10px; /* Adjust spacing from the left */
+}
+
+.r-para, .r-subtotal, .r-thank-para, .receipt-items-attributes, .customer-para, .r-big-para{
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.max-width{
+  max-width: 400px;
+  margin: auto;
+}
+
+.first-and-last{
+  gap: 10px;
+}
+
+.profile-icon i{
+  color: #2F1C6B;
+  margin-top: 4px;
+}
+
+.profile-icon i:hover{
+  cursor: pointer;
+}
+
+.profile-text{
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* Nav stuff */
+
+.nav-link-list{
+  gap: 15px;
+}
+
+.nav-link-list li{
+  font-weight: bold;
+  list-style: none;
+}
+
+.nav-link-list li a{
+  color: #2F1C6B;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-link-list li:hover, .nav-link-list li a:hover{
+  cursor: pointer;
+}
+
+.nav-part{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.ham-icon{
+  display: none;
+}
+
+.phone-nav {
+  display: none;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #F4F5FF; /* Adjust the color and transparency as needed */
+  z-index: 999; /* Ensure it is on top of other elements */ /* Adjust text color if needed */
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom: 2px solid #032641;
+}
+
+.phone-nav.visible {
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+.phone-nav .nav-link-div ul {
+  flex-direction: column;
+}
+
+.phone-nav .nav-link-list li {
+  margin: 10px 0; /* Add margin between items */
+}
+
+.phone-nav .currency-div {
+  margin-top: 20px; /* Add margin to separate currency dropdown from links */
+}
+
+.phone-nav div ul li a, .phone-nav .phone-currency select, .phone-nav .phone-icon i{
+  font-size: 12px;
+}
+
+/* Logo */
+
+.app-logo img{
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.logo-title-div{
+  gap: 12px;
+}
+
+.receipt-logo-div img{
+  max-width: 45px;
+  max-height: 45px;
+  border-radius: 50%;
+  opacity: 90%;
+}
+
+.credits-div{
+  gap: 13px;
+}
+
+.receipt-author-link{
+  text-decoration: none;
+  color: black;
+}
+
+/* Media queries */
+
+@media (max-width: 780px){
+  .max-nav-width{
+    width: 100%;
+    margin: auto;
+  }
+  .nav-part{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 550px){
+  .nav-link-div{
+    display: none;
+  }
+  .currency-div{
+    display: none;
+  }
+  .currency-div{
+    display: none;
+  }
+  .profile-icon{
+    display: none;
+  }
+  .ham-icon{
+    display: block;
+  }
+  .profile-text{
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 380px){
+  .app-title{
+    font-size: 23px;
+  }
+  .inner-bg .h4{
+    font-size: 18px;
+  }
+  .receipt-inputs input{
+    font-size: 12px;
+  }
+  .r-company{
+    font-size: 28px;
+  }
+  .app-logo img{
+    max-width: 40px;
+    max-height: 40px;
+  }
+}
+
+
+
+
+/* Profile page Image CSS */
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay-image {
+  max-width: 90%;
+  max-height: 90%;
+  border: 2px solid white;
+}
+
+/* Customization toggles */
+
+.customization-toggles div{
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+/* Customization sliders */
+
+
+/* Slider */
+
+.range-gap{
+  gap: 12px;
+}
+
+.slider-text{
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+/* General slider styles */
+input[type="range"] {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  height: 8px;
+  background: #0E6CFD; /* Track background color */
+  outline: none;
+  transition: opacity .2s;
+}
+
+input[type="range"]:hover {
+  opacity: 1;
+}
+
+/* Webkit-specific styles for the thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  margin-top: -3px;
+  height: 15px;
+  border: 2px solid #cfa32b;
+  background: #333333; /* Thumb color */
+  cursor: pointer;
+  border-radius: 50%; /* Optional: makes the thumb circular */
+}
+
+/* Webkit-specific styles for the track */
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  background: #FBC638; /* Track color */
+  border-radius: 5px; /* Optional: makes the track corners rounded */
+}
+
+/* Moz-specific styles for the thumb */
+input[type="range"]::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #032641; /* Thumb color */
+  cursor: pointer;
+  border-radius: 50%; /* Optional: makes the thumb circular */
+}
+
+/* Moz-specific styles for the track */
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  background: #FBC638; /* Track color */
+  border-radius: 5px; /* Optional: makes the track corners rounded */
+}
+
+
+/* Email */
+
+
+.email-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.email-overlay-content {
+  background: #032641;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-upload-div{
+  border-radius: 5px;
+  max-width: 300px;
+}
+
+.logo-upload-div:hover{
+  cursor: pointer;
+}
+
+/* Logout button */
+
+.logout-button-yes {
+  background-color: #0E6CFD; /* Match the button color */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.logout-button-cancel {
+  background-color: #D5E0FD; /* Light background color for contrast */
+  color: #0E6CFD; /* Text color matching the button color */
+  border: 2px solid #0E6CFD; /* Border to distinguish from the background */
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.logout-button-yes:hover,
+.logout-button-cancel:hover {
+  opacity: 0.8;
+}
+
+
+/* Nav part new styling */
+
+
+/* Receipt colors */
+
+.the-receipt{
+  color: #333333;
+}
+
+
+/* Start button */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+
+.cta {
+  display: flex;
+  padding: 10px 45px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  color: white;
+  background: #032641;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+}
+
+.cta:focus {
+ outline: none; 
+}
+
+.cta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #FBC638;
+}
+
+.cta span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover  span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+.span-start {
+  transform: skewX(15deg) 
+}
+
+.span-start:nth-child(2) {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+
+/**************SVG****************/
+
+path.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+path.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+
+@keyframes color_anim {
+  0% {
+      fill: white;
+  }
+  50% {
+      fill: #FBC638;
+  }
+  100% {
+      fill: white;
+  }
+}
+
+
+.app-by p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
