@@ -266,7 +266,7 @@ app.use('/api', router);
 
 // Connecting to database
 
-connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(uri)
   .then(() => {
     console.log('Connected to MongoDB');
   })
