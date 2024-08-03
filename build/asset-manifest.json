@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/receiptify/static/css/main.20affa3f.css",
+    "main.js": "/receiptify/static/js/main.0f2cdbdc.js",
+    "static/js/453.d40afe59.chunk.js": "/receiptify/static/js/453.d40afe59.chunk.js",
+    "static/media/barcode.png": "/receiptify/static/media/barcode.6bf4f79cf03d6375eab8.png",
+    "static/media/favicon.ico": "/receiptify/static/media/favicon.db97c749dfa114f0576d.ico",
+    "static/media/receipt-logo.png": "/receiptify/static/media/receipt-logo.560520e11e691dd6a558.png",
+    "index.html": "/receiptify/index.html",
+    "main.20affa3f.css.map": "/receiptify/static/css/main.20affa3f.css.map",
+    "main.0f2cdbdc.js.map": "/receiptify/static/js/main.0f2cdbdc.js.map",
+    "453.d40afe59.chunk.js.map": "/receiptify/static/js/453.d40afe59.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20affa3f.css",
+    "static/js/main.0f2cdbdc.js"
+  ]
+}
