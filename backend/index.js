@@ -18,7 +18,7 @@ const { sign, verify } = token;
 // Middleware
 app.use(json());
 app.use(cors({
-  origin: ["https://receiptify-backend.vercel.app"],
+  origin: ["https://abdulwahab5547.github.io/receiptify-app-frontend/"],
   methods: ["POST", "GET"],
   credentials: true
 }));
