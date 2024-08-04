@@ -92,20 +92,45 @@ router.post('/signup', async (req, res) => {
   }
 });
 
-router.post('/login', async (req, res) => {
-  const { email, password } = req.body;
-  try {
-    const user = await findOne({ email });
-    console.log('User found:', user); // Debugging
-    if (!user || password !== user.password) {
-      return res.status(401).json({ message: 'Invalid email or password' });
+app.post('/api/login', async (req, res) => {
+    const { email, password } = req.body;
+    try {
+        const user = await findOne({ email });
+        console.log('User found:', user); // Debugging
+        if (!user) {
+            return res.status(401).json({ message: 'Invalid email or password' });
+        }
+
+        // Directly compare passwords (not recommended for production)
+        if (password !== user.password) {
+            return res.status(401).json({ message: 'Invalid email or password' });
+        }
+
+        // Generate JWT token
+        const token = generateToken(user);
+
+        // Send token in response
+        res.status(200).json({ token });
+
+    } catch (error) {
+        res.status(500).json({ message: error.message });
     }
-    const token = generateToken(user);
-    res.status(200).json({ token });
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
 });
+
+// router.post('/login', async (req, res) => {
+//   const { email, password } = req.body;
+//   try {
+//     const user = await findOne({ email });
+//     console.log('User found:', user); // Debugging
+//     if (!user || password !== user.password) {
+//       return res.status(401).json({ message: 'Invalid email or password' });
+//     }
+//     const token = generateToken(user);
+//     res.status(200).json({ token });
+//   } catch (error) {
+//     res.status(500).json({ message: error.message });
+//   }
+// });
 
 // Fetch user details
 router.get('/user', authenticateToken, async (req, res) => {
