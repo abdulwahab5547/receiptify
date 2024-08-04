@@ -1,4 +1,5 @@
 import express, { Router, json } from 'express';
+import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import multer from "multer";
 import path from "path";
