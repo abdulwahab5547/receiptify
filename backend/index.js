@@ -166,6 +166,12 @@ app.use((err, req, res, next) => {
   res.status(500).send('Something broke!');
 });
 
+// Generatetoken function
+
+const generateToken = (user) => {
+  return jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+};
+
 // Connect to MongoDB and start server
 const uri = process.env.MONGODB_URL;
 mongoose.connect(uri, {
