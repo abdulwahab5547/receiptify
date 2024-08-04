@@ -4,7 +4,6 @@ import dotenv from 'dotenv';
 import multer from "multer";
 import path from "path";
 dotenv.config();
-import { connect } from 'mongoose';
 import User, { findOne, findById, findByIdAndUpdate } from './models/user.model.js';
 import cors from 'cors';
 import bcrypt from 'bcryptjs';
@@ -143,8 +142,12 @@ app.use((err, req, res, next) => {
 
 // Connect to MongoDB and start server
 const uri = process.env.MONGODB_URL;
-connect(uri)
-  .then(() => console.log('Connected to MongoDB'))
-  .catch((error) => console.error('Error connecting to MongoDB:', error));
+mongoose.connect(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+    .then(() => console.log('Connected to MongoDB'))
+    .catch((error) => console.error('Error connecting to MongoDB:', error));
 
-app.listen(process.env.PORT, () => console.log(`Server running on port ${process.env.PORT}`));
+const port = process.env.PORT || 5000; // Fallback port if PORT is not defined
+app.listen(port, () => console.log(`Server running on port ${port}`));
