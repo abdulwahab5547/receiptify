@@ -96,6 +96,7 @@ router.post('/login', async (req, res) => {
   const { email, password } = req.body;
   try {
     const user = await findOne({ email });
+    console.log('User found:', user); // Debugging
     if (!user || password !== user.password) {
       return res.status(401).json({ message: 'Invalid email or password' });
     }
